@@ -3,9 +3,14 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-import { DropdownPlugin, TablePlugin } from 'bootstrap-vue'
-Vue.use(DropdownPlugin)
-Vue.use(TablePlugin)
+// import { DropdownPlugin, TablePlugin } from 'bootstrap-vue'
+// Vue.use(DropdownPlugin)
+// Vue.use(TablePlugin)
+
+import '@babel/polyfill'
+// import 'intersection-observer' // Optional
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
 
 require('./bootstrap');
 
