@@ -10,8 +10,15 @@
 import '@babel/polyfill'
 // import 'intersection-observer' // Optional
 import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
+import { BTable } from 'bootstrap-vue'
+import { BootstrapVue, BootstrapVueIcons, } from 'bootstrap-vue'
 
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+Vue.use(BootstrapVue)
+Vue.use(BootstrapVueIcons)
+Vue.component('b-table', BTable)
 require('./bootstrap');
 
 window.Vue = require('vue');
