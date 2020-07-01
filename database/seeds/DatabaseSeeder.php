@@ -30,8 +30,8 @@ class DatabaseSeeder extends Seeder
         for ($i = 0; $i <= 2; $i++) {
             $movie = Movie::create([
             'name' => Str::random(10),
-            'summary' => Str::random(10),
-            'description' => Str::random(10),
+            'summary' => Str::random(20),
+            'description' => Str::random(30),
             'country' => Str::random(10),
             'price' => 5000,
             'created_at' => now(),
