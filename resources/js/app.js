@@ -3,6 +3,9 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+// import { DropdownPlugin, TablePlugin } from 'bootstrap-vue'
+// Vue.use(DropdownPlugin)
+// Vue.use(TablePlugin)
 
 require('./bootstrap');
 
@@ -20,6 +23,9 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+
+Vue.component('table-component', require('./components/TableComponent.vue').default);
+Vue.component('table-shortable-component', require('./components/TableShortableComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

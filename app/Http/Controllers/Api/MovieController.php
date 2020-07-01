@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Api;
 
 use App\Movie;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use App\Http\Resources\Movie as MovieResource;
 
 class MovieController extends ApiController

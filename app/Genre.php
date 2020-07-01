@@ -8,5 +8,10 @@ class Genre extends Model
 {
     protected $table = "genres";
 
-    protected $visible = ['name', 'last_name'];
+    protected $visible = ['name'];
+    
+    public function movie()
+    {
+        return $this->hasOne('App\Movie');
+    }
 }

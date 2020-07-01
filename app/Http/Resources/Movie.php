@@ -18,6 +18,11 @@ class Movie extends JsonResource
 
         return [
             'id' => $this->id,
+            'name' => $this->name,
+            'summary' => $this->summary,
+            'description' => $this->description,
+            'content' => $this->content,
+            'price' => $this->price
         ];
     }
 }

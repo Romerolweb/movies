@@ -7,12 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 class Movie extends Model
 {
     protected $table = "movies";
-    // public $timestamps = true;
 
-    // protected $fillable = [''];
+    protected $fillable = ['name', 'summary', 'description', 'content', 'price'];
 
-    public function phone()
+    public function genre()
     {
-        return $this->hasOne('App\Phone');
+        return $this->hasOne('App\Genre');
+    }
+
+    public function file()
+    {
+        return $this->hasMany('App\File');
     }
 }

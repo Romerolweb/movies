@@ -20,17 +20,12 @@ class Movie extends Migration
             $table->text('description');
             $table->string('country');
             $table->integer('price')->nullable();
-
-
             $table->timestamps();
         });
 
         Schema::table('movies', function($table){
             $table->unsignedBigInteger('genre_id')->nullable();
             $table->foreign('genre_id')->references('id')->on('genres');
-
-            $table->unsignedBigInteger('file_id')->nullable();
-            $table->foreign('file_id')->references('id')->on('files');
         });
     }
 

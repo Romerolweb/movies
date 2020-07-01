@@ -19,8 +19,13 @@ class Files extends Migration
             $table->enum('type', ['image', 'video', 'pdf'])->comment('Tipo de archivo');
             $table->timestamps();
         });
-    }
+    
 
+        Schema::table('files', function ($table) {
+            $table->unsignedBigInteger('movie_id')->nullable();
+            $table->foreign('movie_id')->references('id')->on('movies');
+        });
+    }
     /**
      * Reverse the migrations.
      *
