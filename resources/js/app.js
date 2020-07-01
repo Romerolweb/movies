@@ -7,10 +7,12 @@
 // Vue.use(DropdownPlugin)
 // Vue.use(TablePlugin)
 
-import '@babel/polyfill'
+//import '@babel/polyfill';
 // import 'intersection-observer' // Optional
-import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue'
+import Vue from 'vue';
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
+
+Vue.use(BootstrapVue)
 
 require('./bootstrap');
 

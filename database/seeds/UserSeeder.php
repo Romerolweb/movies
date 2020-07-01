@@ -23,8 +23,8 @@ class UserSeeder extends Seeder
             'remember_token' => Str::random(10)
         ]);
         $UserTwo = User::create([
-            'name' => 'srdesingweb@gmail.com',
-            'email' => 'srdesingweb@gmail.com',
+            'name' => 'mosiah@gmail.com',
+            'email' => 'mosiah@gmail.com',
             'password' => bcrypt('12345678'),
             'email_verified_at' => now(),
             'remember_token' => Str::random(10)
