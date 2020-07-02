@@ -8,12 +8,7 @@ class Movie extends Model
 {
     protected $table = "movies";
 
-    protected $fillable = ['name', 'summary', 'description', 'content', 'price'];
-
-    public function genre()
-    {
-        return $this->hasOne('App\Genre');
-    }
+    protected $fillable = ['name', 'summary', 'description', 'content', 'price', 'genre_id'];
 
     public function file()
     {

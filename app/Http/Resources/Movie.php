@@ -3,6 +3,7 @@
 namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
+use App\File;
 
 class Movie extends JsonResource
 {
@@ -15,6 +16,7 @@ class Movie extends JsonResource
     public function toArray($request)
     {
         //return parent::toArray($request);
+        $file = File::where('movie_id', $this->id)->first();
 
         return [
             'id' => $this->id,
@@ -22,7 +24,8 @@ class Movie extends JsonResource
             'summary' => $this->summary,
             'description' => $this->description,
             'content' => $this->content,
-            'price' => $this->price
+            'price' => $this->price,
+            'files' => $file,
         ];
     }
 }

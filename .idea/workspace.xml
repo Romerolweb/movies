@@ -2,23 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f173644d-57a0-426e-9cec-e0876cc867a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/files.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/genre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Movie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_28_165951_files.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_06_28_193856_movie.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/genre.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/File.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/movie.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Genre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_06_28_190955_create_genres_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_06_28_193836_genre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/File.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/MovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/MovieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Movie.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Movie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Movie.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Movie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -153,6 +150,7 @@
       <option name="presentableId" value="Default" />
       <updated>1593368553718</updated>
       <workItem from="1593368568040" duration="25258000" />
+      <workItem from="1593691649138" duration="4437000" />
     </task>
     <servers />
   </component>
@@ -171,22 +169,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="381" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1593454788469" />
-    <state width="1311" height="165" key="GridCell.Tab.0.bottom" timestamp="1593481151282">
+    <state x="350" y="62" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1593694488522">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593481151282" />
-    <state width="1311" height="165" key="GridCell.Tab.0.center" timestamp="1593481151281">
+    <state x="350" y="62" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1593694488522" />
+    <state width="1311" height="165" key="GridCell.Tab.0.bottom" timestamp="1593692518163">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593481151281" />
-    <state width="1311" height="165" key="GridCell.Tab.0.left" timestamp="1593481151182">
+    <state width="1311" height="165" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593692518163" />
+    <state width="1311" height="165" key="GridCell.Tab.0.center" timestamp="1593692518163">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593481151182" />
-    <state width="1311" height="165" key="GridCell.Tab.0.right" timestamp="1593481151281">
+    <state width="1311" height="165" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593692518163" />
+    <state width="1311" height="165" key="GridCell.Tab.0.left" timestamp="1593692518162">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1311" height="165" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593481151281" />
+    <state width="1311" height="165" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593692518162" />
+    <state width="1311" height="165" key="GridCell.Tab.0.right" timestamp="1593692518163">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1311" height="165" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593692518163" />
     <state x="316" y="26" width="731" height="674" key="find.popup" timestamp="1593473183804">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

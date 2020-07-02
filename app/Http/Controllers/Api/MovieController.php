@@ -17,10 +17,10 @@ class MovieController extends ApiController
     {
         $movie = Movie::orderBy('id', 'desc')->get();
 
-        return response()->json(MovieResource::collection($movie), 200);
+        return $this->showData(MovieResource::collection($movie), 201);
 
-        // return $this->showData(OrdersByUser::collection($orders), 201);
-    }
+        // return response()->json(MovieResource::collection($movie), 200);
+}
 
     /**
      * Store a newly created resource in storage.
@@ -30,7 +30,24 @@ class MovieController extends ApiController
      */
     public function store(Request $request)
     {
-        //
+        $validate = $request->validate([
+            'name' => 'required|unique:movies,name|max:255',
+            'summary'=>'nullable|max:255',
+            'description'=>'nullable|max:255',
+            'content'=>'required|max:255',
+            'price'=>'nullable|numeric',
+            'genre_id'=>'required'
+        ]);
+
+        $validator = validator($request->all(),$validate);
+
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors(), 'success' => false], 422);
+        }
+
+        $movie = Movie::create($request->all());
+        return response()->json(MovieResource::collection($movie), 201);
+
     }
 
     /**
@@ -41,7 +58,14 @@ class MovieController extends ApiController
      */
     public function show(Movie $movie)
     {
-        //
+
+        $exist = Movie::where('id', $movie)->exists();
+
+        if($exist){
+            $toReturn = Movie::where('id', $movie)->first();
+            return response()->json(MovieResource::collection($toReturn), 200);
+        }
+
     }
 
     /**
@@ -53,7 +77,21 @@ class MovieController extends ApiController
      */
     public function update(Request $request, Movie $movie)
     {
-        //
+
+        $validate = $request->validate([
+            'name' => 'required|unique:movies,name|max:255',
+            'summary'=>'nullable|max:255',
+            'description'=>'nullable|max:255',
+            'content'=>'required|max:255',
+            'price'=>'nullable|numeric',
+            'genre_id'=>'required'
+        ]);
+
+        $validator = validator($request->all(),$validate);
+
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors(), 'success' => false], 422);
+        }
     }
 
     /**

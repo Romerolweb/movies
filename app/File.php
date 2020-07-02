@@ -8,4 +8,9 @@ class File extends Model
 {
     protected $table = "files";
 
+    protected $fillable = [
+        'uri',
+        'type',
+        'movie_id',
+    ];
 }
